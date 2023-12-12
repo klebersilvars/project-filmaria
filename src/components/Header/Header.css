@@ -1,0 +1,49 @@
+:root {
+    --corPadrao : #333;
+    --corLetra: white;
+    --sombra: box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.349);
+}
+
+.header-container {
+    background-color: var(--corPadrao);
+    height: 70px;
+    width: 100%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.349);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.filmes-brasil {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.link-filmes {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+}
+
+.link-filmes::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Altura da linha */
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease; /* Adiciona uma transição suave para a largura */
+}
+
+.link-filmes:hover::before {
+    width: 100%;
+}
+
+
+
